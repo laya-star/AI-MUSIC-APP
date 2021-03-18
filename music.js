@@ -43,5 +43,11 @@ function song_name(){
     if(scoreLeftWrist>0.2){
         circle(leftWristX, leftWristY,20);
         song1.play();
+        song2.pause();
+        }
+        if(scoreRightWrist>0.2){
+            circle(rightWristX,rightWristY, 20);
+            song2.play();
+            song1.pause();
         }
     }
